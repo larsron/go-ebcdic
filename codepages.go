@@ -195,7 +195,7 @@ var (
 		// EBCDIC 037 (AUS, CAN, NZL, PRT, ZAF, USA)
 		//
 		// Based on https://en.wikipedia.org/wiki/EBCDIC_037
-		EBCDIC037: unicodeToEbcdicMap{
+		EBCDIC037: {
 			HasEuroPatch: false,
 			Map: []byte{
 				0x00, 0x01, 0x02, 0x03, 0x37, 0x2D, 0x2E, 0x2F, 0x16, 0x05, 0x25, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, // 0x00..0x0F
@@ -220,7 +220,7 @@ var (
 		// EBCDIC 273 (DEU, AUT)
 		//
 		// Based on https://en.wikipedia.org/wiki/EBCDIC_273
-		EBCDIC273: unicodeToEbcdicMap{
+		EBCDIC273: {
 			HasEuroPatch: false,
 			Map: []byte{
 				0x00, 0x01, 0x02, 0x03, 0x37, 0x2D, 0x2E, 0x2F, 0x16, 0x05, 0x25, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, // 0x00 - 0x0F
@@ -243,7 +243,7 @@ var (
 		},
 
 		// EBCDIC 277 (DEN, NOR)
-		EBCDIC277: unicodeToEbcdicMap{
+		EBCDIC277: {
 			HasEuroPatch: false,
 			Map: []byte{
 				0x00, 0x01, 0x02, 0x03, 0x37, 0x2D, 0x2E, 0x2F, 0x16, 0x05, 0x25, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, // 0x00 - 0x0F
@@ -269,7 +269,7 @@ var (
 		// (EBCDIC 037 with EURO-Patch)
 		//
 		// Based on https://en.wikipedia.org/wiki/EBCDIC_037
-		EBCDIC1140: unicodeToEbcdicMap{
+		EBCDIC1140: {
 			HasEuroPatch: true,
 			EuroChar:     0x9F,
 			Map: []byte{
@@ -296,7 +296,7 @@ var (
 		// (EBCDIC 273 with EURO-Patch)
 		//
 		// Based on https://en.wikipedia.org/wiki/EBCDIC_273
-		EBCDIC1141: unicodeToEbcdicMap{
+		EBCDIC1141: {
 			HasEuroPatch: true,
 			EuroChar:     0x9F,
 			Map: []byte{
@@ -321,7 +321,7 @@ var (
 
 		// EBCDIC 1142 (DEN, NOR)
 		// (EBCDIC 277 with EURO-Patch)
-		EBCDIC1142: unicodeToEbcdicMap{
+		EBCDIC1142: {
 			HasEuroPatch: true,
 			EuroChar:     0x9F,
 			Map: []byte{
